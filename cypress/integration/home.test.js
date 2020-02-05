@@ -3,9 +3,10 @@
 
 describe('Easy testing', () => {
 
-  it('hello world test', () => {
-    expect(true).to.equal(true);
-  });
+    it('hello world test', () => {
+      expect(true).to.equal(true);
+    });
+
 
     beforeEach(() => {
 
@@ -18,6 +19,10 @@ describe('Easy testing', () => {
         cy.visit('/');
 
     });
+
+
+
+
 
     it('should send request to jsonplaceholder and create new fixture file', () => {
       cy.request('https://jsonplaceholder.typicode.com/todos').then(
